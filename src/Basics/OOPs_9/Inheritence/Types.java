@@ -1,4 +1,4 @@
-package Practice.OOPs_9.Inheritence;
+package Basics.OOPs_9.Inheritence;
 
 public class Types {
     public static void main(String[] args) {
