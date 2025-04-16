@@ -1,4 +1,4 @@
-package Practice.Questions.CodeWithHarry;
+package Basics.Questions.CodeWithHarry;
 //Incomplete
 import java.util.*;
 
