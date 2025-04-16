@@ -4,7 +4,7 @@
  subjects from keyboard
 */
 
-package Practice.Questions;
+package Basics.Questions;
 
 import java.util.Scanner;
 
