@@ -2,7 +2,7 @@
 Write a Java Program to Check
 Whether the Entered Digit is Integer or Not
 */
-package Practice.Questions;
+package Basics.Questions;
 
 import java.util.Scanner;
 public class Integer_or_Not {

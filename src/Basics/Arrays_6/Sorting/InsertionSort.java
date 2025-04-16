@@ -1,4 +1,4 @@
-package Practice.Arrays_6.Sorting;
+package Basics.Arrays_6.Sorting;
 
 import java.util.Scanner;
 
@@ -27,13 +27,13 @@ public class InsertionSort {
         for (int i = 1; i < arr.length; i++) {
 //            System.out.println("At i = " + i);
             int curr = arr[i];
-            System.out.println("Curr = " + curr);
+//            System.out.println("Curr = " + curr);
             int prev = i - 1;
-            System.out.println("Prev = " + prev);
+//            System.out.println("Prev = " + prev);
             while (prev >= 0 && arr[prev] > curr) {
-                System.out.println("");
+//                System.out.println("");
                 arr[prev + 1] = arr[prev];
-                System.out.println("arr[" + (prev + 1) + " = " + arr[prev]);
+//                System.out.println("arr[" + (prev + 1) + " = " + arr[prev]);
 //                System.out.println("At prev = " + arr[prev]);
                 prev--;
             }
