@@ -1,4 +1,4 @@
-package Practice.Questions.CodingNinja;
+package Basics.Questions.CodingNinja;
 
 /*
 Given three values - Start Fahrenheit Value (S), End Fahrenheit value (E), and Step Size (W),

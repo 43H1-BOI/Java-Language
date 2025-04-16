@@ -1,4 +1,4 @@
-package Practice.Functions_8;
+package Basics.Functions_8;
 
 import java.util.Scanner;
 

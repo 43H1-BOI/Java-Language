@@ -1,4 +1,4 @@
-package Practice.Questions.CodingNinja;
+package Basics.Questions.CodingNinja;
 /*
 
 You have been given an array ‘a’ of ‘n’ non-negative integers.

@@ -1,4 +1,4 @@
-package Practice.Questions.CodingNinja;
+package Basics.Questions.CodingNinja;
 import java.util.Scanner;
 //Write a program to find x to the power n (i.e., x^n). Take x and n from the user.
 public class P5_C2_CN {
