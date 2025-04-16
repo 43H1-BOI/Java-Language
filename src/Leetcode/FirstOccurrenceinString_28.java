@@ -31,6 +31,9 @@ Constraints:
 
         for (int i = 0; i < m1 - m2 + 1; i++) {
             if (s1.substring(i, i + m2).equals(s2)) {
+                // lets break down this
+                // 1 . we know if we got the string then it be of size s2.length()
+                // 2 . then we checks if the string is equals to s2 string
                 return i;
             }
         }
