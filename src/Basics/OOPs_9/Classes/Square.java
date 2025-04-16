@@ -1,4 +1,4 @@
-package Practice.OOPs_9.Classes;
+package Basics.OOPs_9.Classes;
 
 import java.util.Scanner;
 
