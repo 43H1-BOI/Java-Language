@@ -1,4 +1,4 @@
-package Practice.Basics_1;
+package Basics.Basics_1;
 
 public class Sum_of_Num_2 {
     public static void main(String[] args){

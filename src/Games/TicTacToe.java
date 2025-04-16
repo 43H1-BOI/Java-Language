@@ -123,9 +123,9 @@ public class TicTacToe {
         */
 
             System.out.println(" " + SuccessMoves[0][0] + " │ " + SuccessMoves[0][1] + " │ " + SuccessMoves[0][2] + " ");
-            System.out.println("———————¦———————¦———————");
+            System.out.println("—————¦—————¦—————");
             System.out.println(" " + SuccessMoves[1][0] + " │ " + SuccessMoves[1][1] + " │ " + SuccessMoves[1][2] + " ");
-            System.out.println("———————¦———————¦———————");
+            System.out.println("—————¦—————¦—————");
             System.out.println(" " + SuccessMoves[2][0] + " │ " + SuccessMoves[2][1] + " │ " + SuccessMoves[2][2] + " ");
 
 
@@ -196,12 +196,12 @@ public class TicTacToe {
         System.out.println("—————¦—————¦—————");
         System.out.println(" 3,1 │ 3,2 │ 3,3 ");
 
-        do {
+//        do {
             System.out.println("Enter Your Move in Given Coordinate Form :  ");
             int cord1 = Sc.nextInt();
             int cord2 = Sc.nextInt();
             Board(SuccessMoves, cord1, cord2);
-        } while ();
+//        } while ();
         // Will put Winning Boards Inside While()
 
 
