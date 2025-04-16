@@ -1,19 +1,10 @@
 package DSA.Data_Structure.LinkedList;
 
 public class LinkedList {
-    static class Node {
-        int data;
-        Node next;
-
-        Node(int d) {
-            this.data = d;
-            this.next = null;
-        }
-    }
-
     public static Node head = null;
     public static Node tail = null;
     public static int size;
+    public static int loop; // To Calculate no of counts of loop
 
     public static void insertAtHead(int val) {
         Node newNode = new Node(val);
@@ -71,7 +62,6 @@ public class LinkedList {
             while (--pos != 0) {
                 temp = temp.next;
             }
-
             newNode.next = temp.next;
             temp.next = newNode;
         }
@@ -89,8 +79,8 @@ public class LinkedList {
             }
             val = temp.next.data;
             temp.next = temp.next.next;
+            size--;
         }
-        size--;
         return val;
     }
 
@@ -103,6 +93,90 @@ public class LinkedList {
         System.out.println("null \nSize=" + size);
     }
 
+    // Returns Index
+    public static int findEle(int ele) { // Iterative Method
+        Node temp = head;
+        int i = 0;
+        while (i < size) {
+            if (temp.data == ele) {
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
+    }
+
+    /* Working Codes
+    // Returns boolean
+    public static boolean findEle(int ele) { // Iterative Method
+        Node temp = head;
+        int i = 0;
+        while (i < size) {
+            if (temp.data == ele) {
+                return true;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return false;
+    }
+
+    public static boolean findElement(int ele,Node head1){ // Recursive Method
+        boolean bb = false;
+        System.out.println("loop no :" + (++loop));
+        if(head1.data == ele) {
+            return true;
+        } else if(head1.next == null){
+            return false;
+        } else {
+            bb = findElement(ele,head1.next);
+        }
+        return bb;
+    }
+
+    */
+
+    public static int findElement(int ele, Node head1) { // Recursive Method
+        if (head1 == null) {
+            return -1;
+        } else if (head1.data == ele) {
+            return 0;
+        }
+        int idx = findElement(ele, head1.next);
+
+        if (idx == -1) {
+            return -1;
+        } else {
+            return idx + 1;
+        }
+    }
+
+    public static void Reverse() {
+        Node prev, curr, next;
+        prev = null;
+        curr = head;
+
+        while (curr != null) {
+            next = curr.next;
+
+            curr.next = prev;
+
+            prev = curr;
+            curr = next;
+        }
+
+        head = prev;
+    }
+
+    /* TO-Do
+        public static Node recRev(Node head1){
+            if(head1.next == null){
+                return head1;
+            }
+
+        }
+    */
     public static void main(String[] args) {
 //        LinkedList ll = new LinkedList();
         insertAtTail(6);
@@ -133,5 +207,37 @@ public class LinkedList {
         int val3 = deleteNode(2);
         System.out.println("\nremoved " + val3);
         display();
+
+        System.out.println("Element index = " + findEle(11));
+        System.out.println("Element index = " + findElement(9, head));
+
+        Reverse();
+        display();
+
+        /*
+        // For Iterative Method
+        if (findEle(0)) {
+            System.out.println("Element Found !");
+        } else
+            System.out.println("Element Not Found !");
+
+
+        // For Recursive Method
+        if (findElement(6,head)) {
+            System.out.println("Element Found !");
+        } else
+            System.out.println("Element Not Found !");
+
+        */
+    }
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int d) {
+            this.data = d;
+            this.next = null;
+        }
     }
 }
