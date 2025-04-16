@@ -1,4 +1,4 @@
-package Practice.OperatorsAnd_2;
+package Basics.OperatorsAnd_2;
 
 public class BitWise_Operator {
     public static void main(String[] args) {
@@ -97,3 +97,5 @@ public class BitWise_Operator {
     }
 
 }
+
+
