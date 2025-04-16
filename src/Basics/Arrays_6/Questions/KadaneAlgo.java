@@ -1,4 +1,4 @@
-package Practice.Arrays_6;
+package Basics.Arrays_6.Questions;
 
 import java.util.*;
 

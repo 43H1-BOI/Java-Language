@@ -1,4 +1,4 @@
-package Practice.Arrays_6;
+package Basics.Arrays_6;
 import java.util.*;
 public class DuplicateElement {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Practice.Arrays_6.ArrayList;
+package Basics.Arrays_6.ArrayList;
 
 import java.util.ArrayList;
 
@@ -79,6 +79,21 @@ public class IntroToArrayList {
         if (b) {
             System.out.println("Element Exists !! ");
         } else System.out.println("Elements Doesn't Exists !! ");
+
+
+        // If you don't Specify class, you can put anything inside it arr1
+        System.out.println("\nUsing Specify Class : ");
+        System.out.println("If we don't specify class of ArrayList , then we will put anything inside them");
+        ArrayList arr1 = new ArrayList();
+        arr1.add("Abhishek");
+        arr1.add(69);
+        arr1.add(9.45);
+        arr1.add('s');
+//        arr1.add(new int[]{3, 2});
+        System.out.println(arr1);
+
+
+
 
 
     }

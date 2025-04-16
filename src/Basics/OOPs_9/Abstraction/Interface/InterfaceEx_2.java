@@ -1,4 +1,4 @@
-package Practice.OOPs_9.Abstraction.Interface;
+package Basics.OOPs_9.Abstraction.Interface;
 
 import java.util.*;
 
