@@ -1,4 +1,4 @@
-package Practice.Bit_Manipulation_9;
+package Basics.Bit_Manipulation_9;
 
 import java.util.Scanner;
 
@@ -12,6 +12,5 @@ public class CheckOddEven_BM {
         if ((a & 1) != 1) {
             System.out.println("Even");
         } else System.out.println("Odd");
-
     }
 }

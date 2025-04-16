@@ -1,8 +1,8 @@
-package Practice.OOPs_9.Classes.Constructors;
+package Basics.OOPs_9.Classes.Constructors;
 
 import java.util.*;
 
-import static Practice.OOPs_9.Classes.Constructors.Constructors.Sc;
+import static Basics.OOPs_9.Classes.Constructors.Constructors.Sc;
 /*
 Constructors are Special Member Function which are called when an Object is Created .
 They are used to Initialise values to Data Members of Objects.

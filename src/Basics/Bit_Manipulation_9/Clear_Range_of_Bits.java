@@ -1,4 +1,4 @@
-package Practice.Bit_Manipulation_9;
+package Basics.Bit_Manipulation_9;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class Clear_Range_of_Bits {
         while (i <= j) {
             num = Clear_ith_bit(num, i);
             i++;
-//            num = Clear_ith_bit(num, j);
+//            num = Checking(num, j);
 //            j--;
         }
         return num;

@@ -1,4 +1,4 @@
-package Practice.Basics_1;
+package Basics.Basics_1;
 
 public class Data_Types_3 {
     public static void main(String[] args){
