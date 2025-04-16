@@ -1,4 +1,4 @@
-package Practice.OperatorsAnd_2;
+package Basics.OperatorsAnd_2;
 
 public class Operators_5 {
     public static void main(String[] args){

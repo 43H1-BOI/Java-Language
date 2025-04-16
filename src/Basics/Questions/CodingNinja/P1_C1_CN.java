@@ -1,4 +1,4 @@
-package Practice.Questions;
+package Basics.Questions;
 import java.util.Scanner;
 //Take the length(L) and breadth(B) of the rectangle as input and find its area
 

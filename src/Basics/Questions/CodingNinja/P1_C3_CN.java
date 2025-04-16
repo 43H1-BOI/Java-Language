@@ -1,7 +1,6 @@
-package Practice.Questions.CodingNinja;
+package Basics.Questions.CodingNinja;
 
 import java.util.*;
-import java.io.*;
 //Largest Element in the Array
 
 public class P1_C3_CN {

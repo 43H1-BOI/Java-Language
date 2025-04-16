@@ -1,4 +1,4 @@
-package Practice.Questions.CodingNinja;
+package Basics.Questions.CodingNinja;
 /*
 Create a class named Person with a string variable 'name' and an integer variable 'age,'
 such that these variables are not accessible outside the class and implement a
@@ -8,7 +8,7 @@ way to initialize the variables and print the variables.
 2.getValue- that prints the variables value.
 */
 import java.util.* ;
-import java.io.*;
+
 class Person {
     private String name;
     private int age;
