@@ -1,4 +1,4 @@
-package Practice.Functions_8;
+package Basics.Functions_8;
 
 // Sum of N Num Using Recursion
 public class Recu_SumOfN {
