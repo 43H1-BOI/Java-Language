@@ -1,4 +1,4 @@
-package Practice.Questions.CodingNinja;
+package Basics.Questions.CodingNinja;
 
 import java.util.Scanner;
 public class P3_C2_CN {

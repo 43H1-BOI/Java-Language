@@ -1,4 +1,4 @@
-package Practice.Questions;
+package Basics.Questions;
 
 import java.util.*;
 

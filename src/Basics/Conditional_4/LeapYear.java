@@ -1,4 +1,4 @@
-package Practice.Conditional_4;
+package Basics.Conditional_4;
 
 import java.util.Scanner;
 

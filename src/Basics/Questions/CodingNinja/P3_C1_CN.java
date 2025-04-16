@@ -1,4 +1,4 @@
-package Practice.Questions;
+package Basics.Questions;
 /*
 Take the principal amount, rate of interest,
 and the time period as input and calculate the Simple Interest.
