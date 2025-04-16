@@ -1,8 +1,9 @@
-package Practice.Arrays_6;
+package Basics.Arrays_6;
 
 import java.util.Scanner;
 
-public class SecondLargest {
+public class SecondSmallest {
+
     static Scanner Sc = new Scanner(System.in);
 
     public static int[] getArr() {
@@ -24,34 +25,36 @@ public class SecondLargest {
         }
     }
 
-    public static int max(int[] arr) {
-        int max = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
+    public static int Min(int[] arr) {
+        int minElement = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < minElement) {
+                minElement = arr[i];
             }
         }
-        return max;
+        return minElement;
     }
 
-    public static int SecMax(int[] arr) {
-        int max = max(arr);
+    public static int secondSmall(int[] arr) {
+        int min = Min(arr);
         for (int i = 0; i < arr.length; i++) {
-            if (max == arr[i]) {
-                arr[i] = Integer.MIN_VALUE;
+            if (arr[i] == min) {
+                arr[i] = Integer.MAX_VALUE;
             }
         }
-        return max(arr);
+        return Min(arr);
     }
 
     public static void main(String[] args) {
         int[] arr = getArr();
-        printArr(arr);
-        int max = max(arr);
-        int max_2 = SecMax(arr);
+//        System.out.println("Elements in Array are : ");
+//        printArr(arr);
+        System.out.println("\n : ");
+        int small = Min(arr);
+        int secSmall = secondSmall(arr);
 
-        System.out.println(max);
-        System.out.println(max_2);
-
+        System.out.println(small);
+        System.out.println(secSmall);
     }
+
 }

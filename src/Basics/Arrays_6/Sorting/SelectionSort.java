@@ -1,4 +1,4 @@
-package Practice.Arrays_6.Sorting;
+package Basics.Arrays_6.Sorting;
 
 import java.util.Scanner;
 

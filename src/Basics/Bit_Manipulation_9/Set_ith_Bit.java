@@ -1,4 +1,4 @@
-package Practice.Bit_Manipulation_9;
+package Basics.Bit_Manipulation_9;
 
 import java.util.Scanner;
 
