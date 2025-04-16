@@ -1,4 +1,4 @@
-package Practice.String_7;
+package Basics.String_7;
 
 //Input s = "abcd"
 //Output a ab abc abcd b bc bcd c cd d

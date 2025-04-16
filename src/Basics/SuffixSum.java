@@ -1,10 +1,11 @@
-package Practice.Arrays_6;
+package Basics;
 
 import java.util.Scanner;
 
-public class SubPairOfArr {
+public class SuffixSum {
+    static Scanner Sc = new Scanner(System.in);
+
     public static int[] getArr() {
-        Scanner Sc = new Scanner(System.in);
         System.out.print("Enter Size of Array : ");
         int x = Sc.nextInt();
         System.out.println("Enter Elements in Array :: ");
@@ -18,26 +19,28 @@ public class SubPairOfArr {
 
     public static void printArr(int[] arr) {
         // System.out.println("Elements in Array Are :: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Element " + (i + 1) + " = " + arr[i]);
+        for (int j : arr) {
+            System.out.print(j + " ");
+            //        System.out.println("Element " + (i + 1) + " = " + arr[i]);
         }
     }
 
-    public static void SubPair(int[] arr) {
-        for (int i = 0; i < arr.length; i++) { // i = start
-            for (int j = i; j < arr.length; j++) { // j = end
-                for (int k = i; k <= j; k++) {
-                    System.out.print(arr[k] + " ");
-                }
-                System.out.println();
-            }
-            System.out.println();
+    public static int[] suffixSum(int[] arr) {
+        int[] suffix = new int[arr.length];
+        int n = arr.length - 1;
+        suffix[n] = arr[n];
+        for (int i = n - 1; i >= 0; i--) {
+            suffix[i] = arr[i] + suffix[n + 1];
         }
+        return suffix;
     }
+
 
     public static void main(String[] args) {
         int[] arr = getArr();
+        System.out.println("Elements in Array are : ");
         printArr(arr);
-        SubPair(arr);
+        System.out.println("\n : ");
+        printArr(suffixSum(arr));
     }
 }
