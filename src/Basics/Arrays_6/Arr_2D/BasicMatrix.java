@@ -1,4 +1,4 @@
-package Practice.Arrays_6.Arr_2D;
+package Basics.Arrays_6.Arr_2D;
 
 import java.util.*;
 import java.lang.*;

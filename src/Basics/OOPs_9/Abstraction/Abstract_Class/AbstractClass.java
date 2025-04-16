@@ -1,4 +1,4 @@
-package Practice.OOPs_9.Abstraction.Abstract_Class;
+package Basics.OOPs_9.Abstraction.Abstract_Class;
 
 public class AbstractClass {
 
