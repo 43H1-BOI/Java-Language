@@ -1,9 +1,9 @@
-package Practice.Patterns_3;
+package Basics.Patterns_3;
 
 import java.util.Scanner;
 
 // Incomplete
-public class HollowRect {
+public class HollowRectIn {
     public static void main(String[] args) {
         Scanner Sc = new Scanner(System.in);
         int length = Sc.nextInt();

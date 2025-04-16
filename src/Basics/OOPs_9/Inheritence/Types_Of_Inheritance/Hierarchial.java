@@ -1,4 +1,4 @@
-package Practice.OOPs_9.Inheritence.Types_Of_Inheritance;
+package Basics.OOPs_9.Inheritence.Types_Of_Inheritance;
 
 public class Hierarchial {
     public static void main(String[] args) {
