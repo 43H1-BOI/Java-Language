@@ -1,4 +1,4 @@
-package Practice.Questions.CodeWithHarry;
+package Basics.Questions.CodeWithHarry;
 import java.util.*;
 
 public class Replace_Characters {

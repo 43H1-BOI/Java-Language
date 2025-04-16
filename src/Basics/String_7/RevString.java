@@ -1,4 +1,4 @@
-package Practice.String_7;
+package Basics.String_7;
 
 // Reversing String in 2 Different Ways
 public class RevString {
