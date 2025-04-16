@@ -16,7 +16,7 @@ public class ArmstrongNum {
 
             res += rem * rem * rem;
 
-            // removing last digit from the orignal number
+            // removing last digit from the original number
             ogNum /= 10;
         }
         if (res == num)
