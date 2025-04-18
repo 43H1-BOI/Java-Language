@@ -14,10 +14,10 @@ package Practice.College;
 import java.util.Scanner;
 
 public class Employee {
+    private final int EmpNo;
     Scanner Sc = new Scanner(System.in);
-    private int EmpNo;
     private double MonthlySal;
-    private double YearlySal;
+//    private double YearlySal;
 
     Employee(int empNo, double monthlySalary) { // Parameterized Constructor
         EmpNo = empNo;
@@ -32,7 +32,7 @@ public class Employee {
         System.out.print("Enter Monthly Salary of (Emp" + EmpNo + ") : ");
         MonthlySal = Sc.nextInt();
 
-        YearlySal = (MonthlySal * 12);
+//        YearlySal = (MonthlySal * 12);
     }
 
     void yearlySalary() {
@@ -46,9 +46,7 @@ public class Employee {
 
     void raisedSal(double percent) {
         percent /= 100;
-        System.out.println("Percent = " + percent);
         MonthlySal += (MonthlySal * percent);
-        System.out.println("Monthly Sal * Percent = " + (MonthlySal * percent));
         displayInfo();
     }
 }

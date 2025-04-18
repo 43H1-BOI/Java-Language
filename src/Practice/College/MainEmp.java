@@ -2,7 +2,7 @@ package Practice.College;
 
 public class MainEmp {
     public static void main(String[] args) {
-        Employee E1 = new Employee(6565, 25000);
+        Employee E1 = new Employee();
         E1.displayInfo();
         E1.yearlySalary();
         E1.raisedSal(20);
