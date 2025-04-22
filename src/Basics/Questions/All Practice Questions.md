@@ -1,6 +1,5 @@
-<html>
 <head>
-
+    <title>Questions</title>
 </head>
 <body>
 <h1>All Basics Questions and Their Solutions</h1>

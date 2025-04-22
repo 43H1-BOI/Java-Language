@@ -1,10 +1,10 @@
-package Randoms;
+package Basics.Arrays_6;
 
 import java.util.*;
 
 public class ReverseArray {
     public static int[] RevArr(int[] arr) {
-        int len = (arr.length-1);
+        int len = (arr.length - 1);
         int i = 0;
         int[] ReverseArr = new int[arr.length];
         while (i < arr.length) {
@@ -23,7 +23,7 @@ public class ReverseArray {
         System.out.println("Enter Elements in Array :: ");
         int[] arr = new int[x];
         for (int i = 0; i < arr.length; i++) {
-            System.out.print("Element "+ (i+1)+" : ");
+            System.out.print("Element " + (i + 1) + " : ");
             arr[i] = Sc.nextInt();
         }
         return arr;

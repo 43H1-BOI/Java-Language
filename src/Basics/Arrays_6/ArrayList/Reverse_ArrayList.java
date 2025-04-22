@@ -44,7 +44,8 @@ public class Reverse_ArrayList {
         System.out.print("Enter Size of ArrayList : ");
         int x = Sc.nextInt();
         System.out.println("Enter Elements in Array :: ");
-        ArrayList arr = new ArrayList();
+
+        ArrayList arr = new ArrayList(x);
         for (int i = 0; i < x; i++) {
             System.out.print("Element " + (i + 1) + " : ");
             arr.add(Sc.nextInt());

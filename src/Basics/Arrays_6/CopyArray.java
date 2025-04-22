@@ -1,16 +1,16 @@
-package Randoms;
+package Basics.Arrays_6;
 
 import java.util.*;
 
 public class CopyArray {
     public static int[] DupArr(int[] arr) {
         int[] DupArr = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            DupArr[i] = arr[i];
-        }
+//        for (int i = 0; i < arr.length; i++) {
+//            DupArr[i] = arr[i];
+//        }
+        System.arraycopy(arr, 0, DupArr, 0, arr.length);
         return DupArr;
     }
-
 
 
     public static int[] getArr() {
@@ -20,7 +20,7 @@ public class CopyArray {
         System.out.println("Enter Elements in Array :: ");
         int[] arr = new int[x];
         for (int i = 0; i < arr.length; i++) {
-            System.out.print("Element "+ (i+1)+" : ");
+            System.out.print("Element " + (i + 1) + " : ");
             arr[i] = Sc.nextInt();
         }
         return arr;

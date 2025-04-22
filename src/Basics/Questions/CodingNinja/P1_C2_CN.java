@@ -1,6 +1,7 @@
-package Basics.Questions;
+package Basics.Questions.CodingNinja;
 
 import java.util.Scanner;
+
 /*
 Write a program that takes a character as input and prints
 1, if the character is an uppercase alphabet (A - Z).

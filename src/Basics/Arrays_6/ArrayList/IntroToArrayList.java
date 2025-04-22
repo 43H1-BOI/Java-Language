@@ -42,7 +42,8 @@ public class IntroToArrayList {
 
         // To add Element at Specific Index
         System.out.println("\nTo Add an element at specific index , we use add(index,element) method : ");
-        arr.add(0, 1);
+        arr.addFirst(1);
+//        arr.add(0, 1);
 
         System.out.println("Printing ArrayList after Adding new Element to ArrayList : ");
         System.out.println(arr);
@@ -57,7 +58,8 @@ public class IntroToArrayList {
 
         // To Remove Element at any Index
         System.out.println("\nTo remove element from given Index , we use remove() method : ");
-        arr.remove(0);
+//        arr.remove(0);
+        arr.removeFirst();
 
         System.out.println("Printing ArrayList after Modifying Element in ArrayList : ");
         System.out.println(arr);

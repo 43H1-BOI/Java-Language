@@ -1,11 +1,11 @@
-package Basics.Questions;
+package Basics.Questions.CodingNinja;
 /*
 Take the principal amount, rate of interest,
 and the time period as input and calculate the Simple Interest.
 Note: Return answer as Floor integer value
 */
 
-import java.util.* ;
+import java.util.*;
 
 class P3_C1_CN {
 
@@ -20,7 +20,7 @@ class P3_C1_CN {
         int time = Sc.nextInt();
 
         System.out.print("Simple Interest = ");
-        int SI = (int)(principal*rate*time)/100;
+        int SI = (int) (principal * rate * time) / 100;
         System.out.print(SI);
     }
 }

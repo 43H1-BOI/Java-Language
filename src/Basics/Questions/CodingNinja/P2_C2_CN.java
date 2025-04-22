@@ -1,8 +1,8 @@
-package Basics.Questions;
+package Basics.Questions.CodingNinja;
 
 import java.util.*;
 
-import static java.lang.Math.max;
+//import static java.lang.Math.max;
 
 /*
  Write a program that takes three numbers a,b, and c

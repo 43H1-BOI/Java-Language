@@ -13,7 +13,40 @@ package Practice.College;
 
 import java.util.Scanner;
 
+class MainEmp {
+    public static void main(String[] args) {
+        Employee E1 = new Employee();
+        E1.displayInfo();
+        E1.yearlySalary();
+        E1.raisedSal(20);
+
+        Employee E2 = new Employee(3142, 12000);
+        E2.displayInfo();
+        E2.yearlySalary();
+        E2.raisedSal(10);
+    }
+}
+
 public class Employee {
+    /*
+    public static void main(String[] args){
+        Employee Abhi = new Employee(1243,12000.20);
+        Employee Anu = new Employee(1133,15000);
+        Employee Tushar = new Employee();
+
+        Abhi.yearlySalary();
+        Anu.yearlySalary();
+        Tushar.yearlySalary();
+
+        Abhi.displayInfo();
+        Anu.displayInfo();
+        Tushar.displayInfo();
+
+        Abhi.raisedSal(10);
+        Anu.raisedSal(10);
+        Tushar.raisedSal(20);
+    }
+    */
     private final int EmpNo;
     Scanner Sc = new Scanner(System.in);
     private double MonthlySal;
@@ -31,7 +64,6 @@ public class Employee {
 
         System.out.print("Enter Monthly Salary of (Emp" + EmpNo + ") : ");
         MonthlySal = Sc.nextInt();
-
 //        YearlySal = (MonthlySal * 12);
     }
 
