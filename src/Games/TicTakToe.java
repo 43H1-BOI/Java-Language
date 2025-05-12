@@ -26,6 +26,33 @@ public class TicTakToe {
         Board[2][1] = players.U;
         Board[2][2] = players.U;
     }
+*/
+
+    // To Validate Move
+    static boolean isValidMove(int cord1, int cord2) {
+        return (cord1 >= 1 && cord1 <= 3) && (cord2 >= 1 && cord2 <= 3);
+    }
+
+    // To Print Winner
+    static void printWinner() {
+        players winner = whoWins();
+        if (count == 9) {
+            System.out.println("Game Draw");
+        } else if (winner == players.X) {
+            System.out.println("Player X wins the Game");
+        } else if (winner == players.O) {
+            System.out.println("Player O wins the Game");
+        }
+    }
+
+    // To Display General Game Board
+    static void generalBoard() {
+        System.out.println(" 0,0 │ 0,1 │ 0,2 ");
+        System.out.println("—————¦—————¦—————");
+        System.out.println(" 1,0 │ 1,1 │ 1,2 ");
+        System.out.println("—————¦—————¦—————");
+        System.out.println(" 2,0 │ 2,1 │ 2,2 ");
+    }
 
     // To Display Board
     static void displayBoard() {
