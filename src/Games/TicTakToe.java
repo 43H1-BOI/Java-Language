@@ -137,7 +137,16 @@ public class TicTakToe {
         System.out.print("Player " + pNum + " Move :");
         cord1 = Sc.nextInt();
         cord2 = Sc.nextInt();
-        makeMove(P, cord1, cord2);
+
+        if (isValidMove(cord1, cord2) && Board[cord1 - 1][cord2 - 1] == null) {
+            // This Means the Co-ords contains Temporary Player or No move is made previously on that place
+            Board[cord1 - 1][cord2 - 1] = P;
+            count++;
+        } else {
+            System.out.println("Invalid Move");
+            System.out.println("Please Enter Valid Coordinates Again.");
+            playerMove(P, pNum);
+        }
     }
 
     // To Have Players
