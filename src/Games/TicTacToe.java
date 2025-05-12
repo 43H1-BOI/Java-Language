@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class TicTacToe {
     static Scanner Sc = new Scanner(System.in);
 
+    // Checks for Winner
     static boolean hasWinner = false;
 
     // To Count No of Moves
@@ -129,6 +130,7 @@ public class TicTacToe {
         } while (count < 9 && !hasWinner);
     }
 
+    // To Perform Player Move
     static void playerMove(players P, int pNum) {
         int cord1, cord2;
 
