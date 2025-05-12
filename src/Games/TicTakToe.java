@@ -66,11 +66,25 @@ public class TicTakToe {
         System.out.println("—————¦—————¦—————");
         System.out.println(" 2,0 │ 2,1 │ 2,2 ");
         */
-        System.out.println(" " + Board[0][0] + " │ " + Board[0][1] + " │ " + Board[0][2] + " ");
-        System.out.println("———¦———¦———");
-        System.out.println(" " + Board[1][0] + " │ " + Board[1][1] + " │ " + Board[1][2] + " ");
-        System.out.println("———¦———¦———");
-        System.out.println(" " + Board[2][0] + " │ " + Board[2][1] + " │ " + Board[2][2] + " ");
+        System.out.println();
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (Board[i][j] == null) {
+                    System.out.print(" " + (i + 1) + "," + (j + 1) + " ");
+                } else {
+                    System.out.print("  " + Board[i][j] + "  ");
+                }
+                if (j < 2) System.out.print("│");
+            }
+            System.out.println("\n—————¦—————¦—————");
+        }
+        System.out.println();
+//
+//        System.out.println(" " + Board[0][0] + " │ " + Board[0][1] + " │ " + Board[0][2] + " ");
+//        System.out.println("———¦———¦———");
+//        System.out.println(" " + Board[1][0] + " │ " + Board[1][1] + " │ " + Board[1][2] + " ");
+//        System.out.println("———¦———¦———");
+//        System.out.println(" " + Board[2][0] + " │ " + Board[2][1] + " │ " + Board[2][2] + " ");
     }
 
     // Checks the Winner
