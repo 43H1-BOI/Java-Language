@@ -9,35 +9,84 @@ public class TicTacToe {
     // Stores Successful Moves of game
     static players[][] SuccessMoves = new players[3][3];
 
-    // Initialized all Members as T {Temporary Number}
+    /*
+    // Initialized all Members as U {Temporary Number}
     static {
-        SuccessMoves[0][0] = players.T;
-        SuccessMoves[0][1] = players.T;
-        SuccessMoves[0][2] = players.T;
-        SuccessMoves[1][0] = players.T;
-        SuccessMoves[1][1] = players.T;
-        SuccessMoves[1][2] = players.T;
-        SuccessMoves[2][0] = players.T;
-        SuccessMoves[2][1] = players.T;
-        SuccessMoves[2][2] = players.T;
-        /*
-        // Below Code Not Working
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                SuccessMoves[i][j] = players.T;
-            }
-        }
-        */
-    }
+        SuccessMoves[0][0] = players.U;
+        SuccessMoves[0][1] = players.U;
+        SuccessMoves[0][2] = players.U;
+        SuccessMoves[1][0] = players.U;
+        SuccessMoves[1][1] = players.U;
+        SuccessMoves[1][2] = players.U;
+        SuccessMoves[2][0] = players.U;
+        SuccessMoves[2][1] = players.U;
+        SuccessMoves[2][2] = players.U;
 
+//         Below Code Not Working
+//        for (int i = 0; i < 3; i++) {
+//            for (int j = 0; j < 3; j++) {
+//                SuccessMoves[i][j] = players.U;
+//            }
+//        }
+//
+    }
+   */
     // Stores player 1 and player 2 info
     static players p1, p2;
 
-    // Contains Players
-    enum players {
-        T, // Temporary Player
-        X, // Player X
-        O // Player O
+    static {
+        SuccessMoves[0][0] = players.U;
+        SuccessMoves[0][1] = players.U;
+        SuccessMoves[0][2] = players.U;
+        SuccessMoves[1][0] = players.U;
+        SuccessMoves[1][1] = players.U;
+        SuccessMoves[1][2] = players.U;
+        SuccessMoves[2][0] = players.U;
+        SuccessMoves[2][1] = players.U;
+        SuccessMoves[2][2] = players.U;
+    }
+
+    static void Board(players[][] SuccessMoves, int cord1, int cord2) {
+        // cord1 and cord2 must be in range 0 <= x <= 2
+        if (cord1 <= 2 && cord1 >= 0 && cord2 <= 2 && cord2 >= 0) {
+            // why doing this don't know
+            cord1--;
+            cord2--;
+            if (SuccessMoves[cord1][cord2] == players.U) {
+                // This Means the Co-ords contains Temporary Player or
+                // No move is made previously on that place
+                SuccessMoves[cord1][cord2] = p1;
+            } else {
+                System.out.println("Invalid Move");
+            }
+
+        /*
+        The below one is Systematic Form of Above Board
+        System.out.println(" 1,1 │ 1,2 │ 1,3 ");
+        System.out.println("—————¦—————¦—————");
+        System.out.println(" 2,1 │ 2,2 │ 2,3 ");
+        System.out.println("—————¦—————¦—————");
+        System.out.println(" 3,1 │ 3,2 │ 3,3 ");
+        */
+
+            System.out.println(" " + SuccessMoves[0][0] + " │ " + SuccessMoves[0][1] + " │ " + SuccessMoves[0][2] + " ");
+            System.out.println("—————¦—————¦—————");
+            System.out.println(" " + SuccessMoves[1][0] + " │ " + SuccessMoves[1][1] + " │ " + SuccessMoves[1][2] + " ");
+            System.out.println("—————¦—————¦—————");
+            System.out.println(" " + SuccessMoves[2][0] + " │ " + SuccessMoves[2][1] + " │ " + SuccessMoves[2][2] + " ");
+
+
+        /*
+        // Typical X O Board
+        System.out.println("    │    │   ");
+        System.out.println("————¦————¦————");
+        System.out.println("    │    │   ");
+        System.out.println("————¦————¦————");
+        System.out.println("    │    │   ");
+        */
+        } else {
+            System.out.println("Please Enter Valid Coordinates .");
+        }
     }
 
     // Winning Boards
@@ -100,48 +149,6 @@ public class TicTacToe {
 
     */
 
-    static void Board(players[][] SuccessMoves, int cord1, int cord2) {
-        // cord1 and cord2 must be in range 0 <= x <= 2
-        if (cord1 <= 2 && cord1 >= 0 && cord2 <= 2 && cord2 >= 0) {
-            cord1--;
-            cord2--;
-            if (SuccessMoves[cord1][cord2] == players.T) {
-                // This Means the Co-ords contains Temporary Player or
-                // No move is made previously on that place
-                SuccessMoves[cord1][cord2] = p1;
-            } else {
-                System.out.println("Invalid Move");
-            }
-
-        /*
-        The below one is Systematic Form of Above Board
-        System.out.println(" 1,1 │ 1,2 │ 1,3 ");
-        System.out.println("—————¦—————¦—————");
-        System.out.println(" 2,1 │ 2,2 │ 2,3 ");
-        System.out.println("—————¦—————¦—————");
-        System.out.println(" 3,1 │ 3,2 │ 3,3 ");
-        */
-
-            System.out.println(" " + SuccessMoves[0][0] + " │ " + SuccessMoves[0][1] + " │ " + SuccessMoves[0][2] + " ");
-            System.out.println("—————¦—————¦—————");
-            System.out.println(" " + SuccessMoves[1][0] + " │ " + SuccessMoves[1][1] + " │ " + SuccessMoves[1][2] + " ");
-            System.out.println("—————¦—————¦—————");
-            System.out.println(" " + SuccessMoves[2][0] + " │ " + SuccessMoves[2][1] + " │ " + SuccessMoves[2][2] + " ");
-
-
-        /*
-        // Typical X O Board
-        System.out.println("    │    │   ");
-        System.out.println("————¦————¦————");
-        System.out.println("    │    │   ");
-        System.out.println("————¦————¦————");
-        System.out.println("    │    │   ");
-        */
-        } else {
-            System.out.println("Please Enter Valid Coordinates .");
-        }
-    }
-
     public static void main(String[] args) {
         System.out.println("Tic Tac Toe Game : \n\n");
         int choice;
@@ -196,14 +203,22 @@ public class TicTacToe {
         System.out.println("—————¦—————¦—————");
         System.out.println(" 3,1 │ 3,2 │ 3,3 ");
 
-//        do {
+        do {
             System.out.println("Enter Your Move in Given Coordinate Form :  ");
             int cord1 = Sc.nextInt();
             int cord2 = Sc.nextInt();
             Board(SuccessMoves, cord1, cord2);
-//        } while ();
+        } while (true);
         // Will put Winning Boards Inside While()
 
 
     }
+
+    // Contains Players
+    enum players {
+        U, // Unknown Player
+        X, // Player X
+        O // Player O
+    }
+
 }
