@@ -78,18 +78,10 @@ public class TicTakToe {
     // To Make Moves
     static void makeMove(players P, int cord1, int cord2) {
         // cord1 and cord2 must be in range 0 <= x <= 2
-        if (cord1 >= 1 && cord1 <= 3 && cord2 >= 1 && cord2 <= 3) {
-            // we will get input for the cords not for index , so doing -1 in both
-            cord1--;
-            cord2--;
-
-            if (Board[cord1][cord2] == players.U) {
-                // This Means the Co-ords contains Temporary Player or No move is made previously on that place
-                Board[cord1][cord2] = P;
-                count++;
-            } else {
-                System.out.println("Invalid Move");
-            }
+        if (isValidMove(cord1, cord2) && Board[cord1][cord2] == null) {
+            // This Means the Co-ords contains Temporary Player or No move is made previously on that place
+            Board[cord1 - 1][cord2 - 1] = P;
+            count++;
         } else {
             System.out.println("Please Enter Valid Coordinates .");
         }
