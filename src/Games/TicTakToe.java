@@ -22,8 +22,7 @@ public class TicTakToe {
     }
 
     // To Print Winner
-    static void printWinner() {
-        players winner = whoWins();
+    static void printWinner(players winner) {
         if (count == 9) {
             System.out.println("Game Draw");
         } else if (winner == players.X) {
@@ -31,15 +30,6 @@ public class TicTakToe {
         } else if (winner == players.O) {
             System.out.println("Player O wins the Game");
         }
-    }
-
-    // To Display General Game Board
-    static void generalBoard() {
-        System.out.println(" 0,0 │ 0,1 │ 0,2 ");
-        System.out.println("—————¦—————¦—————");
-        System.out.println(" 1,0 │ 1,1 │ 1,2 ");
-        System.out.println("—————¦—————¦—————");
-        System.out.println(" 2,0 │ 2,1 │ 2,2 ");
     }
 
     // To Display Board
@@ -80,6 +70,7 @@ public class TicTakToe {
             if (Board[i][0] != null &&
                     Board[i][0] == Board[i][1] &&
                     Board[i][1] == Board[i][2]) {
+                hasWinner = true;
                 return Board[i][0];
             }
         }
@@ -89,6 +80,7 @@ public class TicTakToe {
             if (Board[0][i] != null &&
                     Board[0][i] == Board[1][i] &&
                     Board[1][i] == Board[2][i]) {
+                hasWinner = true;
                 return Board[0][i];
             }
         }
@@ -97,6 +89,7 @@ public class TicTakToe {
         if (Board[0][0] != null &&
                 Board[0][0] == Board[1][1] &&
                 Board[1][1] == Board[2][2]) {
+            hasWinner = true;
             return Board[0][0];
         }
 
@@ -104,6 +97,7 @@ public class TicTakToe {
         if (Board[0][2] != null &&
                 Board[0][2] == Board[1][1] &&
                 Board[1][1] == Board[2][0]) {
+            hasWinner = true;
             return Board[0][2];
         }
 
@@ -111,13 +105,12 @@ public class TicTakToe {
         return null;
     }
 
-
     // main Function
     public static void main(String[] args) {
         System.out.println("TicTacToe Game : ");
         System.out.println("Player 1 --> X");
         System.out.println("Player 2 --> O");
-        System.out.println("Empty Block --> U");
+//        System.out.println("Empty Block --> U");
 
         do {
             displayBoard();
@@ -161,9 +154,3 @@ public class TicTakToe {
         O // Player O
     }
 }
-
-/*
-TODO :
--> This Game is Terminating after 5 moves
--> Optimize this Code
- */
