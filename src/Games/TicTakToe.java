@@ -13,22 +13,8 @@ public class TicTakToe {
     // Stores Information related Players
     static players pO = players.O, pX = players.X;
 
-    // To Store Board
+    // To Store Board { all values = null }
     static players[][] Board = new players[3][3];
-
-    static {
-        // To Initialize Board
-        Board[0][0] = players.U;
-        Board[0][1] = players.U;
-        Board[0][2] = players.U;
-        Board[1][0] = players.U;
-        Board[1][1] = players.U;
-        Board[1][2] = players.U;
-        Board[2][0] = players.U;
-        Board[2][1] = players.U;
-        Board[2][2] = players.U;
-    }
-*/
 
     // To Validate Move
     static boolean isValidMove(int cord1, int cord2) {
