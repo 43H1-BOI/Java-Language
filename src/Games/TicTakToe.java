@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class TicTakToe {
     static Scanner Sc = new Scanner(System.in);
 
+    static boolean hasWinner = false;
+
     // To Count No of Moves
     static int count = 0;
 
@@ -128,7 +130,7 @@ public class TicTakToe {
 
             displayBoard();
             playerMove(pX, 2);
-        } while (count < 9);
+        } while (count < 9 && !hasWinner);
     }
 
     static void playerMove(players P, int pNum) {
