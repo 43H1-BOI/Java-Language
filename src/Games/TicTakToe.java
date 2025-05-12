@@ -75,33 +75,40 @@ public class TicTakToe {
 
     // Checks the Winner
     static players whoWins() {
-        // True == O Wins
-        // False == X Wins
-        if (Board[0][0] == Board[0][1] && Board[0][1] == Board[0][2]) {
-            if (Board[0][0] == players.O) return players.O;
-            else return players.X;
-        } else if (Board[1][0] == Board[1][1] && Board[1][1] == Board[1][2]) {
-            if (Board[1][0] == players.O) return players.O;
-            else return players.X;
-        } else if (Board[2][0] == Board[2][1] && Board[2][1] == Board[2][2]) {
-            if (Board[2][0] == players.O) return players.O;
-            else return players.X;
-        } else if (Board[0][0] == Board[1][0] && Board[1][0] == Board[2][0]) {
-            if (Board[0][0] == players.O) return players.O;
-            else return players.X;
-        } else if (Board[0][1] == Board[1][1] && Board[1][1] == Board[2][1]) {
-            if (Board[0][1] == players.O) return players.O;
-            else return players.X;
-        } else if (Board[0][2] == Board[1][2] && Board[1][2] == Board[2][2]) {
-            if (Board[0][2] == players.O) return players.O;
-            else return players.X;
-        } else if (Board[0][0] == Board[1][1] && Board[1][1] == Board[2][2]) {
-            if (Board[0][0] == players.O) return players.O;
-            else return players.X;
-        } else if (Board[2][0] == Board[1][1] && Board[1][1] == Board[0][2]) {
-            if (Board[2][0] == players.O) return players.O;
-            else return players.X;
-        } else return null;
+        // Rows
+        for (int i = 0; i < 3; i++) {
+            if (Board[i][0] != null &&
+                    Board[i][0] == Board[i][1] &&
+                    Board[i][1] == Board[i][2]) {
+                return Board[i][0];
+            }
+        }
+
+        // Columns
+        for (int i = 0; i < 3; i++) {
+            if (Board[0][i] != null &&
+                    Board[0][i] == Board[1][i] &&
+                    Board[1][i] == Board[2][i]) {
+                return Board[0][i];
+            }
+        }
+
+        //Diagonal 1
+        if (Board[0][0] != null &&
+                Board[0][0] == Board[1][1] &&
+                Board[1][1] == Board[2][2]) {
+            return Board[0][0];
+        }
+
+        // Diagonal 2
+        if (Board[0][2] != null &&
+                Board[0][2] == Board[1][1] &&
+                Board[1][1] == Board[2][0]) {
+            return Board[0][2];
+        }
+
+        // No Winner
+        return null;
     }
 
 
