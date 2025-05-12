@@ -124,15 +124,11 @@ public class TicTakToe {
             playerMove(pO, 1);
 
             // To Check if moves > 5 (base-case) then if win then return
-            if (count >= 5) {
-                players winner = whoWins();
-                if (winner == players.X) {
-                    System.out.println("Player X wins the Game");
-                    return;
-                } else if (winner == players.O) {
-                    System.out.println("Player O wins the Game");
-                    return;
-                }
+            players winner = whoWins();
+            if (count >= 5 && hasWinner) {
+                displayBoard();
+                printWinner(winner);
+                return;
             }
 
             displayBoard();
