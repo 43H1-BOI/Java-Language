@@ -1,15 +1,17 @@
 # Topics Covered
 
-1.[ ] Basics <br>
-2.[ ] Operators , Precedence and Associativity <br>
-3.[ ] Pattern Printing <br>
-4.[ ] Conditional Statements <br>
-5.[ ] Loops <br>
-6.[ ] Array <br>
-7.[ ] String and StringBuilder <br>
-8.[ ] Functions And Methods <br>
-8.[ ] OOPS Concepts <br>
-9.[ ] 
+1.[ ] [Basics](#basics)
+2.[ ] [Operators , Precedence and Associativity](#operators-precedence-and-associativity)
+3.[ ] [Pattern Printing](#pattern-printing)
+4.[ ] [Conditional Statements](#conditional-statements)
+5.[ ] [Loops](#loops)
+6.[ ] [Array](#arrays)
+7.[ ] [String and StringBuilder](#string-and-stringbuilder)
+8.[ ] [Functions And Methods](#functions-and-methods)
+8.[ ] [OOPS Concepts](#oops-concepts)
+9.[ ] [Randoms](#randoms)
+10. [ ] [Core Java](#core-java)
+11. [ ] [Data Structure and Algorithms](#data-structure-and-algorithm)
 
 <hr>
 
@@ -22,7 +24,7 @@
 
 <hr>
 
-# Operators,Precedence and Associativity
+# Operators, Precedence and Associativity
 
 1. Operators in Java
 2. Precedence
@@ -117,6 +119,7 @@
    palindrome because the reverse of 121 is 121 itself. On the other hand, 321 is not a
    palindrome because the reverse of 321 is 123, which is not equal to 321.
 4. Search about(Google) & use the following methods of the Math class in Java:
+
 * a. Math.min( )
 * b. Math.max( )
 * c. Math.sqrt( )
@@ -125,6 +128,7 @@
 * f. Math.abs( ) <br>
   Free reading resource (https://www.javatpoint.com/java-math)
   Please feel free to look for more resources/websites on your own.
+
 5. Write a Java method to compute the sum of the digits in an integer.
    (Hint : Approach this question in the following way :
    a. Take a variable sum = 0
@@ -135,3 +139,17 @@
 <hr>
 
 # OOPS Concepts
+
+# Randoms
+
+- [Armstrong Number]()
+- [Factorial]()
+- [Fibonacci Series]()
+- [Palindrome]()
+- [Prime Number]()
+- [Bubble Sort (Array)]()
+- [Reverse of Number]()
+
+# Core Java
+
+# Data Structure and Algorithm
