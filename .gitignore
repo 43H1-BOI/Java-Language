@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 /src/Practice/
 /src/Leetcode/
+/src/.Leetcode.zip
 
 ### Eclipse ###
 .apt_generated
